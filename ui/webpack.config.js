@@ -7,7 +7,7 @@ module.exports = withModuleFederationPlugin({
   name: "user",
 
   exposes: {
-    "./profile": "./projects/user/src/app/profile/profile.module.ts",
+    "./profile": "./projects/user/ui/src/app/profile/profile.module.ts",
   },
 
   shared: {
