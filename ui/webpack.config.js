@@ -2,10 +2,13 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
 
-  name: 'user',
+  name: 'user-app',
 
   exposes: {
-    './Component': './projects/user/ui/src/app/app.component.ts',
+    // './Component': './projects/user/ui/src/app/app.component.ts',
+
+    // Expose all the routes defined in user app to shell app
+    './User-Routes': './projects/user/ui/src/app/app.routes.ts',
   },
 
   shared: {
