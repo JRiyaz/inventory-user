@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <h1 class="text-3xl font-bold underline text-cyan-400">
+      Welcome to {{ title }}!
+    </h1>
 
     <router-outlet />
   `,
   styles: [],
 })
 export class AppComponent {
-  title = 'user';
+  title = "user";
 }
