@@ -1,9 +1,8 @@
-import { Component, OnInit } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: "app-root",
-  standalone: true,
+  selector: 'app-root',
   imports: [RouterOutlet],
   template: `
     <h1 class="text-3xl font-bold underline text-cyan-400">
@@ -15,7 +14,7 @@ import { RouterOutlet } from "@angular/router";
   styles: [],
 })
 export class AppComponent implements OnInit {
-  title = "user";
+  title = 'user';
 
   ngOnInit(): void {}
 }

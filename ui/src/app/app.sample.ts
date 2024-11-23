@@ -1,9 +1,8 @@
-import { Component, OnInit } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: "app-sample",
-  standalone: true,
+  selector: 'app-sample',
   imports: [RouterOutlet],
   template: `
     <p class="underline ...">The quick brown fox ...</p>
@@ -14,7 +13,7 @@ import { RouterOutlet } from "@angular/router";
   styles: [],
 })
 export class SampleComponent implements OnInit {
-  title = "user";
+  title = 'user';
 
   ngOnInit(): void {}
 }
